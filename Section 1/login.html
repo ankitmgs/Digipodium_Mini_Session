@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        *{
+            font-family: Nunito;
+        }
+
+        body{
+            /* background: url(https://assets.hongkiat.com/uploads/minimalist-dekstop-wallpapers/4k/original/08.jpg) no-repeat; */
+            /* background: linear-gradient(to right bottom, rgb(255, 184, 184), rgb(186, 186, 255), rgb(255, 231, 186)); */
+            background: linear-gradient(to right bottom, #0000006b, #00000071), url(https://assets.hongkiat.com/uploads/minimalist-dekstop-wallpapers/4k/original/08.jpg) no-repeat;
+            background-size: cover;
+            
+        }
+
+        .mycard{
+            /* border: 1px solid red; */
+            /* position: absolute; */
+            width: 20%;
+            margin: 200px auto 200px 400px;
+            padding: 30px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background: white;
+            box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.253);
+        }
+
+        @media screen and (max-height: 720px) {
+            .mycard{
+                width: 30%;
+                margin: 100px auto 50px 200px;
+            }
+        }
+
+        .text-input, button, .g-btn{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        .my-btn{
+            background: #3e9ea2;
+            color: white;
+            border: none;
+            font-size: 0.8em;
+            margin-top: 20px;
+            padding: 10px;
+            transition-duration: 300ms;
+        }
+
+        .my-btn:hover{
+            background-color: white;
+            outline: 1px solid #3e9ea2;
+            color: #3e9ea2;
+            transform: translateY(-3px);
+            
+        }
+
+        .text-input{
+            padding: 10px;
+            border: 1px solid rgb(100, 100, 100);
+            color: rgb(100, 100, 100);
+            margin-bottom: 15px;
+        }
+
+        label{
+            margin-top: 15px;
+            color: rgb(100, 100, 100);
+        }
+
+        .g-btn{
+            background: white;
+            padding: 10px;
+            border: 1px solid #3e9fa28c;
+            color: #3e9fa28c;
+            transition-duration: 300ms;
+        }
+
+        .g-btn:hover{
+            border: 1px solid #3e9fa2;
+            color: #3e9fa2;
+        }
+
+        .form-title{
+            font-family: Nunito;
+        }
+
+        .my-form{
+            padding: 10px 0 ;
+        }
+
+    </style>
+
+    
+
+</head>
+<body>
+    
+    <div class="mycard">
+        <h3 class="form-title">Sign in to Digipodium</h3>
+        <span>New Here? <a href="/">Create an account</a></span>
+
+        <form class="my-form">
+            <label>Email</label>
+            <input class="text-input" type="text" placeholder="Email Address">
+
+            <div>
+                <label>Password</label>
+                <span style="float: right;">
+                    <a href="/">Forgot Password</a>
+                </span>
+
+            </div>
+            <input class="text-input" type="password" placeholder="Password">
+            
+            <button class="my-btn">Sign In</button>
+
+            <div style="border-top: 1px solid rgb(136, 136, 136);margin-top: 40px;">
+                <p style="text-align: center;margin-top: -13px;">
+                    <span style="background-color: white;padding: 5px;font-size: 0.7em;color: rgb(136, 136, 136);">OR</span>
+                </p>
+            </div>
+            
+
+            <button class="g-btn"><span> <i class="fab fa-google"></i> </span> Signin with Google</button>
+
+        </form>
+
+    </div>
+
+    <iframe width="1904" height="838" src="https://www.youtube.com/embed/53qdI7CPNxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653.6868473334823!2d80.94387864424253!3d26.846771201777837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd07c3c15643%3A0x867bb0de72c4c460!2sDigipodium%20%7C%20Summer%20Training%20in%20Lucknow%20%7C%20Project%20Development%20%7C%20Computer%20Science%20%7C!5e0!3m2!1sen!2sin!4v1636877264423!5m2!1sen!2sin" style="width: 100%;" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</body>
+</html>
